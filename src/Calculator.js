@@ -32,16 +32,6 @@ function Calculator({ workouts, allowSound }) {
   const mins = Math.floor(duration);
   const seconds = (duration - mins) * 60;
 
-  // const playSound = useCallback(
-  //   () =>
-  //     function () {
-  //       if (!allowSound) return;
-  //       const sound = new Audio(clickSound);
-  //       sound.play();
-  //     },
-  //   [allowSound]
-  // );
-
   function handleInc() {
     setDuration((duration) => Math.floor(duration + 1));
   }
