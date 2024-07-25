@@ -27,7 +27,7 @@ function Calculator({ workouts, allowSound }) {
   );
 
   function handleInc() {
-    setDuration((duration) => duration + 1);
+    setDuration((duration) => Math.floor(duration + 1));
   }
 
   return (
